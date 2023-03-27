@@ -1,5 +1,4 @@
 import { DocumentData } from "firebase/firestore";
-import {saveAs} from "file-saver";
 import { toast } from "react-hot-toast";
 
 type Props = {
