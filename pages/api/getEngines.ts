@@ -25,6 +25,6 @@ export default async function handler(
 
   modelOptions.unshift({label:'ImageGenerator', value:'ImageGenerator'})
   
-
+  
   res.status(200).json({modelOptions,});
 }
