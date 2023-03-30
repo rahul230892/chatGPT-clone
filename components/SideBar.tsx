@@ -49,13 +49,15 @@ function SideBar() {
        </div>
 
         {session && (
-          <img
-                onClick={() => signOut()} 
+          <>
+            <img 
                 src={session?.user?.image!}
                 alt="Profile pic"
                 className="h-12 w-12 rounded-full cursor-pointer mx-auto
-                mb-2 hover:opacity-50"
+                mb-2"
           />
+          <span className="text-white mx-auto hover:opacity-50 cursor-pointer" onClick={() => signOut()}>Logout</span>
+          </>
         )}
 
         </div>
