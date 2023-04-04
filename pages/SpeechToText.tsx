@@ -47,7 +47,7 @@ const SpeechToText = () => {
   const [transcription, setTranscription] = useState("");
   const [loader, setLoader]= useState(false)
 
-  const handleFileChange = (event) => {
+  const handleFileChange = (event: any) => {
     setFile(event.target.files[0]);
   };
 
@@ -67,7 +67,7 @@ const SpeechToText = () => {
   const API_ENDPOINT = "https://api.openai.com/v1/audio/transcriptions";
 
   
-  const handleFormSubmit = async (event) => {
+  const handleFormSubmit = async (event: any) => {
     setLoader(true)
     event.preventDefault();
 
